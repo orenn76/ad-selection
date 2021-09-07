@@ -1,0 +1,13 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /request-service
+
+logging:
+  file: ad-selection.log
+  level:
+    org.springframework.web: INFO
+
+fileName: delivery-plan.json
+
+pacingServiceClientUrl: http://localhost:8090/pacing-service

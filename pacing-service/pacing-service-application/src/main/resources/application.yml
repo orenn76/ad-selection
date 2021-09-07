@@ -1,0 +1,24 @@
+server:
+  port: 8090
+  servlet:
+    context-path: /pacing-service
+
+logging:
+  file: ad-selection.log
+  level:
+    org.springframework.web: INFO
+
+spring:
+  datasource:
+    driverClassName: org.h2.Driver
+    password:
+    url: jdbc:h2:file:./data/h2db;DB_CLOSE_ON_EXIT=FALSE;AUTO_RECONNECT=TRUE;DB_CLOSE_DELAY=-1
+    username: sa
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+  h2:
+    console:
+      enabled: true
+      path: /h2-console

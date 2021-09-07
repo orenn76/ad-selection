@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "79f659fb-c743-444a-b95f-00d670084bf3",
+		"name": "Ad Selection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "selectAd",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\"a1\", \"a2\", \"c1\", \"b2\"]"
+				},
+				"url": {
+					"raw": "localhost:8080/request-service/selectAd",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"request-service",
+						"selectAd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addImpression",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8090/pacing-service/ads/b2/impressions",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"pacing-service",
+						"ads",
+						"b2",
+						"impressions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getImpression",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "localhost:8090/pacing-service/ads/b2/impressions",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"pacing-service",
+						"ads",
+						"b2",
+						"impressions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAll",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "localhost:8090/triangle-service/",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"triangle-service",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
